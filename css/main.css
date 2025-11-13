@@ -1,39 +1,31 @@
-/* ==============================================
-   НОВА ПАЛІТРА (Натхненно Borjomi)
-   ============================================== */
 :root {
-  --color-primary: #0A504A; /* Фірмовий глибокий зелений */
-  --color-accent: #1B8B7F;  /* Трохи світліший для інтерактиву */
-  --color-bg: #FAFAF5;      /* Дуже світлий, теплий фон */
-  --color-text: #333333;      /* Темний текст */
-  --color-light-text: #FFFFFF; /* Білий текст для темних фонів */
-  --color-border: #E0E0E0;     /* Світла рамка */
+  --color-primary: #0A504A; 
+  --color-accent: #1B8B7F;  
+  --color-bg: #FAFAF5;      
+  --color-text: #333333;      
+  --color-light-text: #FFFFFF;
+  --color-border: #E0E0E0;     
 }
 
-/* ==============================================
-   Загальні стилі
-   ============================================== */
 html, body {
   margin: 0;
   height: 100%;
 }
 
 body {
-  font: 18px/1.5 "RobotoDraft", "Helvetica Neue", Arial, sans-serif; /* Трохи менший шрифт для елегантності */
+  font: 18px/1.5 "RobotoDraft", "Helvetica Neue", Arial, sans-serif; 
   background-color: var(--color-bg);
   color: var(--color-text);
 }
 
-/* ==============================================
-   Header
-   ============================================== */
+/* Header*/
 header {
-  background: var(--color-primary); /* Суцільний фірмовий колір */
+  background: var(--color-primary); 
   color: var(--color-light-text);
   text-align: center;
-  padding: 30px 20px; /* Збільшено відступ */
+  padding: 30px 20px; 
   position: relative;
-  min-height: 95px; /* Використовуємо min-height */
+  min-height: 95px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,34 +46,37 @@ header h1 {
 
 .neon-text {
   font-size: 2.5rem;
-  font-weight: 600; /* Чистий жирний шрифт */
+  font-weight: 600; 
   color: var(--color-light-text);
-  text-shadow: none; /* Без тіні */
-  animation: none; /* Без анімації */
-  text-transform: uppercase; /* Великі літери - виглядає преміально */
+  text-shadow: none; 
+  animation: none; 
+  text-transform: uppercase; 
   letter-spacing: 1px;
-  position: static; /* Спрощено позиціонування */
+  position: static; 
   transform: none;
 }
 footer {
-    background: linear-gradient(90deg, #0A504A, #1B8B7F);
-    color: #fff;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  background: linear-gradient(90deg, #0A504A, #1B8B7F);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  text-align: center;
 }
+
 .footer-center {
-    flex: 2;
-    text-align: center;
-}
-.footer-text{
-  color: white;
-  position: absolute;
-  bottom: -12%;
-  right: 42%;
   
+  width: 100%;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.8);
+  position: static; 
+  margin-top: 10px;
+  font-size: 14px;
 }
 nav a {
     margin: 0 10px;
@@ -94,30 +89,28 @@ nav a:hover {
 }
 
 
-/* ==============================================
-   1 task - Box
-   ============================================== */
+/*  1 task - Box */
 .Box {
   width: 300px;
   height: 300px;
-  background: var(--color-light-text); /* Чистий білий блок */
-  border: 1px solid var(--color-border); /* Тонка рамка */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* М'яка тінь */
+  background: var(--color-light-text); 
+  border: 1px solid var(--color-border); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--color-text);
   font-family: monospace;
   font-size: 18px;
-  border-radius: 8px; /* Додамо легке заокруглення */
+  border-radius: 8px; 
 }
 
 .outer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-bg); /* Фон сторінки */
-  padding: 40px 0; /* Додамо відступи */
+  background-color: var(--color-bg); 
+  padding: 40px 0; 
 }
 
 .XY {
@@ -132,13 +125,11 @@ nav a:hover {
   width: 80px; 
   height: 40px;
   margin: 0px 0px 50px 0px;
-  color: var(--color-primary); /* Акцентний колір */
+  color: var(--color-primary); 
   font-weight: 600;
 }
 
-/* ==============================================
-   2 task - List
-   ============================================== */
+/* 2 task - List*/
 .list {
   height: 300px;
   display: flex;
@@ -164,11 +155,11 @@ nav a:hover {
 }
 
 .list-button {
-  height: 30px; /* Зробимо кнопки більшими */
+  height: 30px; 
   width: 30px;
   background: var(--color-light-text);
   border: 1px solid var(--color-border);
-  border-radius: 50%; /* Круглі кнопки */
+  border-radius: 50%; 
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -227,7 +218,7 @@ input[type='checkbox'] + label > ins > i {
   position: absolute;
   bottom: 0;
   font-style: normal;
-  color: var(--color-accent); /* Використовуємо акцентний колір */
+  color: var(--color-accent); 
 }
 
 input[type='checkbox'] + label > span {
@@ -238,14 +229,14 @@ input[type='checkbox'] + label > span {
   width: 1em;
   height: 1em;
   background: transparent;
-  border: 2px solid #B0B0B0; /* Нейтральна рамка */
-  border-radius: 4px; /* Заокруглення */
+  border: 2px solid #B0B0B0; 
+  border-radius: 4px; 
   cursor: pointer;
   transition: all 250ms cubic-bezier(.4, .0, .23, 1);
 }
 
 input[type='checkbox'] + label:hover, input[type='checkbox']:focus + label {
-  color: var(--color-primary); /* При наведенні - головний колір */
+  color: var(--color-primary); 
 }
 
 input[type='checkbox']:checked + label > ins {
@@ -253,8 +244,8 @@ input[type='checkbox']:checked + label > ins {
 }
 
 input[type='checkbox']:checked + label > span {
-  border: .5em solid var(--color-primary); /* Замість жовтого */
-  background: var(--color-primary); /* Фон - головний колір */
+  border: .5em solid var(--color-primary); 
+  background: var(--color-primary); 
   animation: shrink-bounce 200ms cubic-bezier(.4, .0, .23, 1);
 }
 
@@ -286,7 +277,7 @@ input[type='checkbox']:checked + label > span:before {
   0% {
     width: 0;
     height: 0;
-    border-color: var(--color-light-text); /* Біла галочка */
+    border-color: var(--color-light-text); 
     transform: translate3d(0, 0, 0) rotate(45deg);
   }
   33% {
@@ -297,21 +288,19 @@ input[type='checkbox']:checked + label > span:before {
   100% {
     width: .2em;
     height: .5em;
-    border-color: var(--color-light-text); /* Біла галочка */
+    border-color: var(--color-light-text); 
     transform: translate3d(0, -.5em, 0) rotate(45deg);
   }
 }
 
-/* ==============================================
-   3 task - Numbers
-   ============================================== */
+/* 3 task - Numbers */
 .numbers {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 10px 0; /* Додамо відступи */
+  padding: 10px 0; 
 }
 
 .numbers-box {
@@ -325,16 +314,16 @@ input[type='checkbox']:checked + label > span:before {
 }
 
 textarea {
-  height: 100%; /* Займає 100% батьківського блоку */
+  height: 100%; 
   width: 100%;
   border: none;
   outline: none;
   resize: none;
-  font-size: 16px; /* Зменшено шрифт */
+  font-size: 16px; 
   font-family: inherit;
   color: var(--color-text);
-  padding: 10px; /* Додано внутрішні відступи */
-  box-sizing: border-box; /* Важливо для 100% висоти/ширини + padding */
+  padding: 10px; 
+  box-sizing: border-box; 
   border-radius: 8px;
 }
 
@@ -354,20 +343,18 @@ textarea {
 }
 
 .cell.black {
-  background-color: var(--color-text); /* Замість чорного */
+  background-color: var(--color-text); 
 }
 .cell.blue {
-  background-color: var(--color-accent); /* Замість синього */
+  background-color: var(--color-accent); 
 }
 
-/* ==============================================
-   4 task - Sliders
-   ============================================== */
+/*  task - Sliders */
 .slider-group {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 10px; /* Збільшено відступ */
+  padding: 10px; 
 }
 
 .slider-group label {
@@ -386,14 +373,14 @@ textarea {
 }
 
 .cube {
-  background: var(--color-primary); /* Суцільний фірмовий колір */
+  background: var(--color-primary); 
   height: 50px;
   width: 50px;
   margin: 30px 30px 0px 100px;
   transform-origin: center;
   transform: translate(-50%, -50%) scale(1, 1) rotate(0deg);
   transition: transform 0.1s linear;
-  border-radius: 4px; /* Легке заокруглення */
+  border-radius: 4px; 
 }
 
 .ownbox {
@@ -422,7 +409,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   appearance: none;
   height: 4px;
-  background: var(--color-border); /* Нейтральний трек */
+  background: var(--color-border); 
   border-radius: 2px;
 }
 
@@ -447,15 +434,15 @@ input[type="range"]::-ms-track {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  border: 2px solid var(--color-primary); /* Рамка головного кольору */
+  border: 2px solid var(--color-primary); 
   border-radius: 50%;
   height: 20px;
   width: 20px;
   position: relative;
   bottom: 8px;
-  background: var(--color-light-text); /* Білий повзунок */
-  background-size: 0; /* Прибираємо зображення */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); /* Чиста тінь */
+  background: var(--color-light-text); 
+  background-size: 0; 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); 
   cursor: grab;
 }
 input[type="range"]::-webkit-slider-thumb:active {
@@ -497,4 +484,57 @@ input[type="range"]::-ms-thumb {
 }
 input[type="range"]::-ms-thumb:active {
   cursor: grabbing;
+}
+/* MEDIA */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .list, 
+  .numbers, 
+  .rotatingbox,
+  .outer {
+    flex-direction: column; 
+    height: auto; 
+    padding: 20px 0;
+  }
+
+  .Box, 
+  .list-box, 
+  .numbers-box, 
+  .ownbox {
+    width: 90%; 
+    max-width: 300px; 
+    margin: 10px 0; 
+  }
+
+  .buttons {
+    flex-direction: row; 
+    margin: 10px 0;
+  }
+  
+  .list-button {
+    width: 40px; 
+    height: 40px;
+  }
+
+  .cube {
+    margin: 30px auto; 
+    transform: scale(1, 1) rotate(0deg) !important; 
+  }
+  
+  .rotatingbox {
+    gap: 40px; 
+    padding-bottom: 50px;
+  }
+
+  input[type="range"] {
+    width: 100%; 
+  }
+  
+  .slider-group label {
+    font-size: 14px; 
+  }
 }
