@@ -50,7 +50,7 @@ function sortBox(box) {
 
 function moveChecked(fromBox, toBox) {
   const checkboxes = fromBox.querySelectorAll("input[type='checkbox']:checked");
-  const targetSection = toBox.querySelector('section'); // Отримуємо секцію один раз
+  const targetSection = toBox.querySelector('section'); 
 
   checkboxes.forEach(checkbox => {
     const label = fromBox.querySelector(`label[for='${checkbox.id}']`);
