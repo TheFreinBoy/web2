@@ -328,18 +328,28 @@ textarea {
 }
 
 #visual-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 25px);
-  grid-auto-rows: 25px;
-  gap: 1px;
-  padding: 5px;
-  background-color: var(--color-light-text);
-  overflow: auto;
+  display: flex;
+  flex-direction: column; 
+  gap: 1px;               
+  padding: 5px;                                  
+  background-color: white;
+  overflow: auto; 
+}
+
+.visual-row {
+  display: flex;
+  gap: 1px; 
+  height: 25px; 
+}
+
+.cell.space {
+  background-color: transparent;
 }
 
 #visual-box .cell {
   width: 25px;
   height: 25px;
+  flex-shrink: 0;
 }
 
 .cell.black {
@@ -349,7 +359,7 @@ textarea {
   background-color: var(--color-accent); 
 }
 
-/*  task - Sliders */
+/* 4 task - Sliders */
 .slider-group {
   display: flex;
   flex-direction: column;
@@ -370,17 +380,25 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin-right: 175px;
 }
 
 .cube {
-  background: var(--color-primary); 
+  background: var(--color-primary);
   height: 50px;
   width: 50px;
-  margin: 30px 30px 0px 100px;
+  border-radius: 4px;
+  transition: all 0.1s linear;
   transform-origin: center;
-  transform: translate(-50%, -50%) scale(1, 1) rotate(0deg);
-  transition: transform 0.1s linear;
-  border-radius: 4px; 
+
+  position: absolute;
+  top: 50%;
+  left: 130%; 
+
+  translate: -50% -50%; 
+  scale: 1 1;           
+  rotate: 0deg;         
 }
 
 .ownbox {
